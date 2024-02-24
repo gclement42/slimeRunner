@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca54q6ck6rbgg"]
+
+[ext_resource type="TileSet" uid="uid://ndt6crgmudsh" path="res://Assets/tileset.tres" id="1_sc8by"]
+
+[node name="Level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(1093, 276)
+tile_set = ExtResource("1_sc8by")
+format = 2
+layer_0/tile_data = PackedInt32Array(131070, 196608, 2, 131069, 262144, 2, 131068, 262144, 2, 131067, 196608, 3)

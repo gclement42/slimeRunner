@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://chiop8nxdd4wn"]
+
+[ext_resource type="Texture2D" uid="uid://b7ibj7nsu6ru2" path="res://Assets/Red_Slime/Idle.png" id="1_3uw8i"]
+[ext_resource type="Script" path="res://Player.gd" id="1_m2i0s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m05vn"]
+size = Vector2(20, 14.2509)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_m2i0s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3uw8i")
+region_enabled = true
+region_rect = Rect2(29, 89.5, 66, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5.40971)
+rotation = 3.14159
+scale = Vector2(2.36178, -1.86401)
+shape = SubResource("RectangleShape2D_m05vn")
