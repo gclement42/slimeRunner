@@ -6,14 +6,22 @@ var segments = [
 ]
 
 var speed = 200
+var tick = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	spawn_segments(0, 0)
-
+	
+func _process(delta):
+	tick += 1
+	if (tick == 150):
+		spawn_segments(750, 0)
+		tick = 0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	for area in $Areas.get_children():
 		area.position.x -= speed * delta
+			
+		
 		
 func spawn_segments(x,y):
 	var seg = segments[randi() % len(segments)].instantiate()

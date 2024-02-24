@@ -19,4 +19,4 @@ scale = Vector2(1.12103, 0.993127)
 
 [node name="Player" parent="." instance=ExtResource("2_ee4cv")]
 position = Vector2(24, 477)
-scale = Vector2(2.44819, 2.60355)
+scale = Vector2(2.44819, 2.91721)

@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkvyoe67b48qs"]
+[gd_scene load_steps=3 format=3 uid="uid://bkvyoe67b48qs"]
 
 [ext_resource type="TileSet" uid="uid://ndt6crgmudsh" path="res://Assets/tileset.tres" id="1_2fswn"]
+[ext_resource type="Script" path="res://Segments/segment.gd" id="1_vemjy"]
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_vemjy")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(871, 216)
@@ -10,3 +12,9 @@ scale = Vector2(1.13173, 1.12355)
 tile_set = ExtResource("1_2fswn")
 format = 2
 layer_0/tile_data = PackedInt32Array(262137, 131072, 5, 262138, 262144, 2, 262139, 262144, 2, 262140, 131072, 4)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(473, 490)
+scale = Vector2(15.8223, 3.75751)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
