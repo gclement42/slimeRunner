@@ -4,14 +4,15 @@
 [ext_resource type="Script" path="res://Segments/segment.gd" id="1_vemjy"]
 
 [node name="Level" type="Node2D"]
+position = Vector2(109, -12)
 script = ExtResource("1_vemjy")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(871, 216)
+position = Vector2(865, 217)
 scale = Vector2(1.13173, 1.12355)
 tile_set = ExtResource("1_2fswn")
 format = 2
-layer_0/tile_data = PackedInt32Array(262137, 131072, 5, 262138, 262144, 2, 262139, 262144, 2, 262140, 131072, 4)
+layer_0/tile_data = PackedInt32Array(262137, 131072, 5, 262138, 262144, 2, 262139, 262144, 2, 262140, 131072, 4, 196606, 196608, 3, 196607, 262144, 2, 131072, 196608, 2, 262146, 131072, 5, 327682, 131072, 1, 262147, 262144, 1, 262148, 262144, 1, 262149, 262144, 1, 262150, 262144, 1, 262151, 262144, 1, 262152, 262144, 1, 262153, 131072, 4, 327689, 131072, 0, 327688, 65536, 4, 327687, 65536, 4, 327686, 65536, 4, 327685, 65536, 4, 327684, 65536, 4, 327683, 65536, 4)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(473, 490)

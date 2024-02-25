@@ -10,13 +10,16 @@
 position = Vector2(80, -24)
 script = ExtResource("1_0hpq1")
 metadata/_edit_vertical_guides_ = [1240.0]
-metadata/_edit_horizontal_guides_ = [648.0, 648.0]
+metadata/_edit_horizontal_guides_ = [648.0]
 
 [node name="Background" parent="." instance=ExtResource("2_mqr4b")]
 scroll_ignore_camera_zoom = false
 
+[node name="Areas" type="Node2D" parent="."]
+position = Vector2(-83, 528)
+
 [node name="Player" parent="." instance=ExtResource("2_ee4cv")]
-position = Vector2(96, 440)
+position = Vector2(0, 480)
 scale = Vector2(2.44819, 2.91721)
 script = ExtResource("5_85vih")
 
@@ -25,7 +28,5 @@ position = Vector2(205.866, -46.6199)
 scale = Vector2(0.408465, 0.342793)
 
 [node name="floor1" parent="." instance=ExtResource("5_applr")]
-position = Vector2(-8, -16)
-
-[node name="Areas" type="Node2D" parent="."]
-scale = Vector2(1, 1)
+position = Vector2(-112, 56)
+scale = Vector2(1.17506, 0.959636)
